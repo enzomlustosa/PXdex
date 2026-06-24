@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PX Pokedex</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header id="header">
+      <p>LOGO</p>
+      <p>LOGO</p>
+      <p>LOGO</p>
+    </header>
+
+    <main>
+      <section id="gridDiv">
+        <div id="pokeInfo">
+          <p id="pokemonName">Pokemon Name</p>
+
+          <span class="separator">|</span>
+
+          <p id="pokemonId">ID</p>
+
+          <span class="separator">|</span>
+
+          <p class="typeBox" id="type1">Type 1</p>
+          <p class="typeBox" id="type2">Type 2</p>
+        </div>
+
+        <div id="pokeInfo2">
+          <img
+            id="pokemonSprite"
+            src="./public/img/placeholder.png"
+            alt="Pokemon Sprite"
+          />
+
+          <div id="pokeInfo3">
+            <p class="sectionTitle">Description:</p>
+
+            <p id="pokemonDescription">
+              Lorem ipsum dolor sit amet,<br />
+              consectetur adipiscing elit.<br />
+              Aliquam elementum dolor in odio gravida,<br />
+              eu laoreet nisl egestas. Cras gravida, quam vitae feugiat feugiat,
+              lacus ante dapibus nisl, a tristique odio purus eu risus.<br />
+              Etiam pulvinar ex sem, quis elementum libero hendrerit nec.
+            </p>
+
+            <div id="pokeHeight" class="infoSeg">Height: 6'7"</div>
+
+            <div id="pokeWeight" class="infoSeg">Weight: 123.45 lbs</div>
+          </div>
+        </div>
+      </section>
+
+      <aside id="favDiv">
+        <div class="favPokemon">
+          <img src="./public/img/Fav.png" class="favImgBG" />
+          <div id="favPokemonInfo">
+            <img src="./public/img/placeholder.png" id="pokeFavIcon" />
+            <t id="pokeFavID">067</t>
+            <t id="pokeFavName">Sponge Bob</t>
+          </div>
+                  <div class="favPokemon">
+          <img src="./public/img/Fav.png" class="favImgBG" />
+          <div id="favPokemonInfo">
+            <img src="./public/img/placeholder.png" id="pokeFavIcon" />
+            <t id="pokeFavID">067</t>
+            <t id="pokeFavName">Sponge Bob</t>
+          </div>
+      </aside>
+    </main>
+
+    <footer class="bgradient" id="footerDiv">
+      <!-- Search -->
+
+      <button class="bgradient" id="fetchButton">
+        <img id="searchIcon" src="./public/img/icon/search.png" alt="Search" />
+      </button>
+
+      <input
+        id="fetchTxt"
+        type="text"
+        placeholder="Insert Pokémon's Name or ID"
+      />
+
+      <div id="brgap1"></div>
+
+      <!-- Favorite -->
+
+      <button class="bgradient" id="favButton">
+        <img id="favIcon" src="./public/img/icon/fav.png" alt="Favorite" />
+      </button>
+
+      <button class="bgradient" id="favButton2">Save Pokémon</button>
+
+      <div id="brgap2"></div>
+
+      <!-- Cry -->
+
+      <button class="bgradient" id="cryButton">
+        <img id="cryIcon" src="./public/img/icon/cry.png" alt="Cry" />
+      </button>
+
+      <button class="bgradient" id="cryButton2">Cry</button>
+
+      <div id="brgap3"></div>
+
+      <!-- Navigation -->
+
+      <div id="BnNDiv">
+        <button class="bgradient" id="backButton">
+          <img id="backIcon" src="./public/img/icon/back.png" alt="Previous" />
+        </button>
+
+        <button class="bgradient" id="nextButton">
+          <img id="nextIcon" src="./public/img/icon/next.png" alt="Next" />
+        </button>
+
+        <button class="bgradient" id="filterFavButton">
+          <img id="favIcon" src="./public/img/icon/fav.png" alt="Favorite" />
+        </button>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
